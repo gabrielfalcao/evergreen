@@ -1,6 +1,6 @@
 [package]
 name = "evergreen"
-version = "0.0.0"
+version = "0.0.1"
 edition = "2021"
 license = "BSL-1.0"
 authors = ["Gabriel Falcão <gabriel@nacaolivre.org>"]
@@ -16,6 +16,7 @@ chacha20 = { version = "0.9.1", features = ["std", "zeroize"] }
 clap = { version = "4.4.6", features = ["derive", "unicode", "env", "wrap_help", "string"] }
 console = "0.15.7"
 env_logger = "0.10.0"
+iocore = "0.100.1"
 log = { version = "0.4.20", features = ["std", "serde"] }
 markdown = "0.3.0"
 openpgp = "0.3.0"

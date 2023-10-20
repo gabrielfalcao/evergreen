@@ -1,5 +1,3 @@
-// use crate::coreio::ensure_dir_exists;
-// use crate::errors::Error;
 use clap::{Args, Parser, Subcommand};
 
 #[derive(Parser, Debug)]
@@ -22,16 +20,16 @@ pub struct NoteParams {
 
 #[derive(Debug, Subcommand)]
 pub enum NoteCommands {
-    #[command(about = "add setting")]
+    #[command(about = "add note")]
     Add(NoteAddParams),
 
-    #[command(about = "get setting")]
+    #[command(about = "get note")]
     Get(NoteGetParams),
 
     #[command(about = "list note")]
     List(NoteListParams),
 
-    #[command(about = "delete setting")]
+    #[command(about = "delete note")]
     Delete(NoteDeleteParams),
 }
 
